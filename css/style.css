@@ -1,0 +1,342 @@
+/* NAV */
+
+nav {
+    border-bottom: 2px solid #e6e6e6;
+    ;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+    color: rgb(255, 206, 83);
+    text-shadow: 0.3px 0.3px black;
+}
+
+/* CAROUSEL */
+
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+#carrusel h1 {
+    font-family: 'Bungee Inline', cursive;
+    margin-bottom: 5vh;
+}
+
+#carrusel p {
+    font-family: 'Bungee Hairline', cursive;
+    font-weight: bold;
+    margin-bottom: 27vh;
+}
+
+/* ANCLA */
+
+#ancla {
+    height: 15vh;
+    padding-top: 3vh;
+    text-align: center;
+}
+
+#ancla a {
+    color: black;
+}
+
+.anchorToggle {
+    color: white;
+}
+
+/* EXHIBIDOR DE DISCOS INDEX */
+
+#exhibidorIndex img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#exhibidorIndex #exhibidorTarjetas button {
+    width: 40%;
+    flex-wrap: nowrap;
+}
+
+
+#exhibidorIndex .card:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
+.padding20px {
+    padding-bottom: 20px;
+}
+
+#exhibidorTarjetas {
+    background-color: white;
+}
+
+.textoExhibidor {
+    color: black;
+}
+
+.textoExhibidorProductos:hover {
+    color: rgb(115, 196, 223);
+}
+
+.textoExhibidorBlanco {
+    color: white;
+}
+
+.margin10px {
+    margin: 10px;
+}
+
+.btnComprar:active {
+    transform: scale(.97);
+}
+
+/* EXHIBIDOR CATEGORIAS INDEX */
+
+#exhibidorCategorias h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contenedorCategorias img {
+    height: 17vh;
+    width: 60%;
+    border: 5px solid lightgray;
+}
+
+@media (max-width: 575px) {
+    #contenedorCategorias img {
+        width: 95%;
+    }
+}
+
+#contenedorCategorias img:hover {
+    cursor: pointer;
+    filter: opacity(65%);
+}
+
+#contenedorCategorias img:active {
+    transform: scale(.9);
+}
+
+#contenedorCategorias {
+    text-align: center;
+}
+
+#contenedorCategorias div {
+    margin-bottom: 20px;
+}
+
+#contenedorCategorias h6 {
+    font-family: monospace;
+}
+
+/* ILUSTRACIONES */
+
+.ilustracion {
+    height: 30vh;
+    width: 100%;
+}
+
+.contenedorIlustraciones {
+    padding: 5vh;
+}
+
+.contenedorIlustracion {
+    text-align: center;
+}
+
+.contenedorIlustracionCentral {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media (max-width: 575px) {
+    .contenedorIlustracionCentral {
+        border: none;
+    }
+}
+
+#ilustracionesSVG h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* NEWSLETTER */
+
+.newsletter__input {
+    padding: 3px;
+}
+
+.newsletter__button {
+    color: black;
+    background-color: #97aee8;
+    margin-bottom: 2%;
+    padding: 3px;
+}
+
+.newsletter__button:hover {
+    background-color: #aeaef8;
+}
+
+#newsletter {
+    background-image: url(../img/VINILOS1.jpg);
+    background-attachment: fixed;
+    margin-top: 5vh;
+}
+
+#newsletter h2 {
+    padding-top: 1vh;
+    font-family: 'Bungee Inline', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+/*  CARRITO */
+
+#contenedorProductos {
+    width: 87%;
+    height: 69%;
+    overflow-x: hidden;
+}
+
+#contenedorProductos li {
+    list-style-type: none;
+}
+
+#carrito {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    background-color: white;
+    left: 74%;
+    z-index: 10;
+    padding-top: 60px;
+    border-left: 2px solid #e6e6e6;
+    ;
+}
+
+#carrito h4 {
+    margin-left: 10px;
+    margin-top: 1px;
+    line-height: 1.42;
+    letter-spacing: -0.24px;
+}
+
+.colorCarritoActivado {
+    background-color: red;
+    color: white;
+}
+
+#precioTotalCarritoIndex {
+    background-color: #17da7c;
+    height: 8%;
+    width: 60%;
+    position: fixed;
+    top: 80%;
+    left: 14%;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#precioTotalCarritoIndex:hover {
+    box-shadow: 1px 1px black;
+    cursor: pointer;
+    background-color: #16d378;
+}
+
+#precioTotalCarritoIndex:active {
+    background-color: #48ac7c;
+}
+
+#precioTotalCarritoIndex a {
+    text-decoration: none;
+}
+
+.contenedorBotonesCarrito i:hover {
+    cursor: pointer;
+}
+
+.contenedorBotonesCarrito i:active {
+    transform: scale(.9);
+}
+
+#precioTotalCarritoIndex h6 {
+    color: white;
+}
+
+.contenedorDiscoCarritoIndex {
+    border-bottom: 2px solid #e6e6e6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#contenedorProductos input {
+    width: 50px;
+}
+
+#contenedorProductos img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.precioCarritoIndex {
+    margin-left: 30px;
+}
+
+#vaciarCarritoIndex {
+    position: fixed;
+    top: 90%;
+    left: 29%;
+}
+
+#vaciarCarritoIndex a {
+    text-decoration: none;
+    color: gray;
+}
+
+#vaciarCarritoIndex a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.borderCarrito {
+    border-radius: 20px;
+    border: 2px solid #e6e6e6;
+}
+
+.contenedorBotonesCarrito {
+    padding-top: 13px;
+    padding-left: 13%;
+    flex-direction: row;
+}
+
+.contenedorBotonesCarrito p {
+    margin-left: 4px;
+}
+
+.modal-dialog {
+    margin-top: 11%;
+}
+
+.productosConfirmarCompra {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* FILTROS CATEGORIAS */
+
+#discosFiltradosPorCategoria img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#discosFiltradosPorCategoria .card:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: 0.3s;
+}
