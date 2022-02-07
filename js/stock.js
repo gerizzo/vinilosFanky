@@ -68,12 +68,6 @@ for (let i = 0; i < discosEnvioGratis.length; i++) {
     todosLosDiscos.push(discosEnvioGratis[i]);
 }
 
-/* ASIGNAR UNA ID A CADA DISCO */
-
-for (let i = 0; i < todosLosDiscos.length; i++) {
-    todosLosDiscos[i].id = i + 1;
-}
-
 /* AÑADIR MÁS DISCOS */
 todosLosDiscos.push(new Disco("Oasis Knebworth 1996", "Oasis", "6000", "Discos en Vivo", 5, true, "./img/knebworth96.jpg"));
 todosLosDiscos.push(new Disco("Fuerza Natural Tour 2009", "Gustavo Cerati", "4500", "Discos en Vivo", 6, true, "./img/fuerzanaturaltour2009.jpg"));
@@ -87,3 +81,9 @@ todosLosDiscos.push(new Disco("Hotel California", "Eagles", "6500", "Rock Yanqui
 todosLosDiscos.push(new Disco("Songs About Jane", "Maroon 5", "7000", "Pop", 6, true, "./img/songsaboutjane.jpg"));
 todosLosDiscos.push(new Disco("In Between Dreams", "Jack Johnson", "6000", "Pop", 4, true, "./img/inbetweendreams.jpg"));
 todosLosDiscos.push(new Disco("Born And Raised", "John Mayer", "6500", "Pop", 4, true, "./img/bornandraised.jpg"));
+
+/* ASIGNAR UNA ID A CADA DISCO */
+
+for (let i = 0; i < todosLosDiscos.length; i++) {
+    todosLosDiscos[i].id = i + 1;
+}

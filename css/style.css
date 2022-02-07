@@ -214,7 +214,6 @@ nav {
     z-index: 10;
     padding-top: 60px;
     border-left: 2px solid #e6e6e6;
-    ;
 }
 
 #carrito h4 {
@@ -238,7 +237,7 @@ nav {
     left: 14%;
     border-radius: 10px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 4%;
 }
 
 #precioTotalCarritoIndex:hover {
