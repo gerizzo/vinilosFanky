@@ -5,10 +5,20 @@ nav {
     ;
 }
 
-.btn-login:hover {
-    cursor: pointer;
-    color: rgb(255, 206, 83);
-    text-shadow: 0.3px 0.3px black;
+@media (min-width:991px) {
+    .navbar-brand-button {
+        order: 1;
+    }
+}
+
+@media (max-width: 991px) {
+    .logoNav{
+        display: none;
+    }
+}
+
+nav .nav-item a:hover {
+    font-weight: 500;
 }
 
 /* CAROUSEL */
@@ -21,13 +31,18 @@ nav {
 #carrusel h1 {
     font-family: 'Bungee Inline', cursive;
     margin-bottom: 5vh;
+    text-shadow: 2px 2px black;
 }
 
 #carrusel p {
-    font-family: 'Bungee Hairline', cursive;
+    font-family: 'Bungee Hairline';
     font-weight: bold;
+    font-size: large;
     margin-bottom: 27vh;
+    color: white;
+    text-shadow: 2px 2px black;
 }
+
 
 /* ANCLA */
 
@@ -216,6 +231,45 @@ nav {
     border-left: 2px solid #e6e6e6;
 }
 
+.nombreDiscoEnCarrito {
+    margin-left: 17px;
+}
+
+@media (min-width: 401px) and (max-width: 991px) {
+    #carrito {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        left: 12%;
+        z-index: 10;
+        padding-top: 60px;
+        border-left: 2px solid #e6e6e6;
+    }
+
+    .nombreDiscoEnCarrito {
+        font-size: smaller;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    #carrito {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        left: 12%;
+        z-index: 10;
+        padding-top: 60px;
+        border-left: 2px solid #e6e6e6;
+    }
+
+    .nombreDiscoEnCarrito {
+        font-size: smaller;
+    }
+}
+
 #carrito h4 {
     margin-left: 10px;
     margin-top: 1px;
@@ -231,13 +285,13 @@ nav {
 #precioTotalCarritoIndex {
     background-color: #17da7c;
     height: 8%;
-    width: 60%;
+    width: 70%;
     position: fixed;
     top: 80%;
-    left: 14%;
+    left: 10%;
     border-radius: 10px;
     text-align: center;
-    padding-top: 4%;
+    padding-top: 14px;
 }
 
 #precioTotalCarritoIndex:hover {
@@ -282,10 +336,6 @@ nav {
     margin-right: 20px;
 }
 
-.precioCarritoIndex {
-    margin-left: 30px;
-}
-
 #vaciarCarritoIndex {
     position: fixed;
     top: 90%;
@@ -306,6 +356,7 @@ nav {
     border-radius: 20px;
     border: 2px solid #e6e6e6;
 }
+
 
 .contenedorBotonesCarrito {
     padding-top: 13px;
@@ -339,3 +390,4 @@ nav {
     transform: scale(1.07);
     transition: 0.3s;
 }
+

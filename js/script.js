@@ -102,6 +102,8 @@ let capturarBotones = () => {
     let capturar = 1;
     for (let i = 0; i < arregloBtnComprar.length; i++) {
         arregloBtnComprar[i].addEventListener("click", (e) => {
+            carritoIndex.classList.replace("animate__fadeOutRight", "animate__fadeInRight");
+            botonCarrito.classList.add("colorCarritoActivado");
             funcionalidadBotones(e, i, capturar);
         });
     }
@@ -112,6 +114,8 @@ let capturarBotones2 = () => {
     let capturar = 2;
     for (let i = 0; i < arregloBtnComprar2.length; i++) {
         arregloBtnComprar2[i].addEventListener("click", (e) => {
+            carritoIndex.classList.replace("animate__fadeOutRight", "animate__fadeInRight");
+            botonCarrito.classList.add("colorCarritoActivado");
             funcionalidadBotones(e, i, capturar);
         });
     }
@@ -194,11 +198,11 @@ let funcionalidadBotones = (e, i, capturar) => {
                                         <div class="col-2">
                                             <img src="${img}">
                                         </div>
-                                        <div class="col-6 text-center">
-                                            <p>${nombreDisco}</p>
-                                            <p clase="precioCarritoIndex"><strong>$${precio}</strong></p>
+                                        <div class="col-5 text-center">
+                                            <p class="nombreDiscoEnCarrito">${nombreDisco}</p>
+                                            <p class="nombreDiscoEnCarrito"><strong>$${precio}</strong></p>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-5">
                                             <div class="container-fluid contenedorBotonesCarrito borderCarrito">
                                                 <div class="row row-cols-1">
                                                     <div class="col-4">
@@ -294,11 +298,11 @@ let funcionalidadBotones = (e, i, capturar) => {
                                         <div class="col-2">
                                             <img src="${img}">
                                         </div>
-                                        <div class="col-6 text-center">
-                                            <p>${nombreDisco}</p>
-                                            <p clase="precioCarritoIndex"><strong>$${precio}</strong></p>
+                                        <div class="col-5 text-center">
+                                            <p class="nombreDiscoEnCarrito">${nombreDisco}</p>
+                                            <p class="nombreDiscoEnCarrito"><strong>$${precio}</strong></p>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-5">
                                             <div class="container-fluid contenedorBotonesCarrito borderCarrito">
                                                 <div class="row row-cols-1">
                                                     <div class="col-4">

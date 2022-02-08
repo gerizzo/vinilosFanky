@@ -69,12 +69,12 @@ for (let i = 0; i < discosEnvioGratis.length; i++) {
 }
 
 /* AÑADIR MÁS DISCOS */
-todosLosDiscos.push(new Disco("Oasis Knebworth 1996", "Oasis", "6000", "Discos en Vivo", 5, true, "./img/knebworth96.jpg"));
-todosLosDiscos.push(new Disco("Fuerza Natural Tour 2009", "Gustavo Cerati", "4500", "Discos en Vivo", 6, true, "./img/fuerzanaturaltour2009.jpg"));
+todosLosDiscos.push(new Disco("Knebworth 1996", "Oasis", "6000", "Discos en Vivo", 5, true, "./img/knebworth96.jpg"));
+todosLosDiscos.push(new Disco("Fuerza Natural Tour", "Gustavo Cerati", "4500", "Discos en Vivo", 6, true, "./img/fuerzanaturaltour2009.jpg"));
 todosLosDiscos.push(new Disco("Avida Dollars", "C Tangana", "5000", "Trap / Rap", 4, true, "./img/avidadollars.jpg"));
 todosLosDiscos.push(new Disco("Impuesto De Fé", "Babasónicos", "5500", "Discos en Vivo", 4, true, "./img/impuestodefe.jpg"));
 todosLosDiscos.push(new Disco("Parte De Mí", "Nicki Nicole", "4500", "Trap / Rap", 7, true, "./img/partedemi.jpg"));
-todosLosDiscos.push(new Disco("Desde El Fin Del Mundo", "Duki", "4500", "Trap / Rap", 5, true, "./img/desdeelfindelmundo.jpg"));
+todosLosDiscos.push(new Disco("24", "Duki", "4500", "Trap / Rap", 5, true, "./img/24.jpg"));
 todosLosDiscos.push(new Disco("Get A Grip", "Aerosmith", "7000", "Rock Yanqui", 5, true, "./img/getagrip.jpg"));
 todosLosDiscos.push(new Disco("Aerosmith", "Aerosmith", "7000", "Rock Yanqui", 5, true, "./img/aerosmith.jpg"));
 todosLosDiscos.push(new Disco("Hotel California", "Eagles", "6500", "Rock Yanqui", 2, true, "./img/hotelcalifornia.jpg"));
