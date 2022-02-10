@@ -30,7 +30,7 @@ nav .nav-item a:hover {
 
 #carrusel h1 {
     font-family: 'Bungee Inline', cursive;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
     text-shadow: 2px 2px black;
 }
 
@@ -38,11 +38,21 @@ nav .nav-item a:hover {
     font-family: 'Bungee Hairline';
     font-weight: bold;
     font-size: large;
-    margin-bottom: 27vh;
+    margin-bottom: 25vh;
     color: white;
     text-shadow: 2px 2px black;
 }
 
+@media (max-width: 423px) {
+    #carrusel p {
+        font-family: 'Bungee Hairline';
+        font-weight: bold;
+        font-size: large;
+        margin-bottom: 18vh;
+        color: white;
+        text-shadow: 2px 2px black;
+    }
+}
 
 /* ANCLA */
 
@@ -72,7 +82,6 @@ nav .nav-item a:hover {
     width: 40%;
     flex-wrap: nowrap;
 }
-
 
 #exhibidorIndex .card:hover {
     cursor: pointer;
@@ -369,7 +378,8 @@ nav .nav-item a:hover {
 }
 
 .modal-dialog {
-    margin-top: 11%;
+    padding: 5%;
+    justify-content: center;
 }
 
 .productosConfirmarCompra {
@@ -391,3 +401,12 @@ nav .nav-item a:hover {
     transition: 0.3s;
 }
 
+/* FORMULARIO REGISTRO */
+
+select:hover {
+    cursor: pointer;
+}
+
+label{
+    font-weight: bold;
+}

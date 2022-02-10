@@ -21,8 +21,6 @@
 <body>
     <header>
         <div class="container">
-
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,14 +58,12 @@
                 </div>
             </nav>
         </div>
+
         <div id="carrito" class="animate__animated animate__fadeOutRight">
-
             <h4>Tu Carrito</h4>
-
             <section id="contenedorProductos">
 
             </section>
-
             <section id="precioTotalCarritoIndex" data-bs-toggle="modal" data-bs-target="#modalPagar">
                 <a id="botonPagar">
                     <h6><strong>Ir a pagar</strong><span style="margin-left: 15px">Subtotal:
@@ -83,18 +79,13 @@
         <!-- MODALS -->
 
         <section class="modal" id="modalPagar">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5><i class="fas fa-check" style="margin-left: 4px;"></i></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body productosConfirmarCompra">
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar<i
-                                class="fas fa-hand-spock" style="margin-left: 4px;"></i></button>
                     </div>
                 </div>
             </div>
@@ -139,7 +130,7 @@
                         <img src="img/VINILOS2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-md-block">
                             <h1>REGISTRATE EN NUESTRO NEWSLETTER</h1>
-                            <p class="parrafoCarrusel">RECIBÍ OFERTAS Y NOVEDADES DIRECTAMENTE A TU EMAIL</p>
+                            <p id="pTres" class="parrafoCarrusel">RECIBÍ OFERTAS Y NOVEDADES DIRECTAMENTE A TU EMAIL</p>
                         </div>
                     </div>
                 </div>
