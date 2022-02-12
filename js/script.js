@@ -164,8 +164,8 @@ document.querySelector("#precioTotalCarritoIndex").addEventListener("click", () 
     } else {
         if (localStorage.getItem("mailUsuario")) {
             let datosUsuario = {
-                nombreUsuario: localStorage.getItem("nombreUsuario"),
-                apellidoUsuario: localStorage.getItem("apellidoUsuario"),
+                nombreUsuario: localStorage.getItem("nombreUsuario").toUpperCase(),
+                apellidoUsuario: localStorage.getItem("apellidoUsuario").toUpperCase(),
                 mailUsuario: localStorage.getItem("mailUsuario"),
                 telefonoUsuario: localStorage.getItem("telefonoUsuario"),
             }
@@ -266,8 +266,8 @@ document.querySelector("#precioTotalCarritoIndex").addEventListener("click", () 
                 let btnSubmit = document.querySelector("#btnSubmit");
                 btnSubmit.addEventListener("click", (event) => {
                     event.preventDefault()
-                    datosUsuario.nombreUsuario = document.querySelector("#name").value
-                    datosUsuario.apellidoUsuario = document.querySelector("#surname").value
+                    datosUsuario.nombreUsuario = document.querySelector("#name").value.toUpperCase();
+                    datosUsuario.apellidoUsuario = document.querySelector("#surname").value.toUpperCase();
                     datosUsuario.mailUsuario = document.querySelector("#mail").value;
                     datosUsuario.telefonoUsuario = document.querySelector("#phone").value;
                     if (datosUsuario.nombreUsuario.length >= 2 && datosUsuario.apellidoUsuario.length >= 2 && datosUsuario.mailUsuario.includes("@") && datosUsuario.mailUsuario.length > 4 && datosUsuario.telefonoUsuario.length >= 7) {
@@ -291,7 +291,7 @@ document.querySelector("#precioTotalCarritoIndex").addEventListener("click", () 
                         `
                             document.querySelector(".modal-body").innerHTML =
                                 `
-                            <h3>¡Gracias ${datosUsuario.nombreUsuario} por tu compra!</h3>
+                            <h3>¡GRACIAS ${datosUsuario.nombreUsuario} POR TU COMPRA!</h3>
                             <br>
                             <h4>Te hemos enviado tu factura electrónica a ${datosUsuario.mailUsuario}</h4>
                             <br>
@@ -342,7 +342,7 @@ document.querySelector("#precioTotalCarritoIndex").addEventListener("click", () 
             `
                     document.querySelector(".modal-body").innerHTML =
                         `
-                <h3>¡Gracias ${datosUsuario.nombreUsuario} por tu compra!</h3>
+                <h3>¡GRACIAS ${datosUsuario.nombreUsuario} POR TU COMPRA!</h3>
                 <br>
                 <h4>Te hemos enviado tu factura electrónica a ${datosUsuario.mailUsuario}</h4>
                 <br>
@@ -442,8 +442,8 @@ document.querySelector("#precioTotalCarritoIndex").addEventListener("click", () 
             let btnSubmit = document.querySelector("#btnSubmit");
             btnSubmit.addEventListener("click", (event) => {
                 event.preventDefault()
-                datosUsuario.nombreUsuario = document.querySelector("#name").value
-                datosUsuario.apellidoUsuario = document.querySelector("#surname").value
+                datosUsuario.nombreUsuario = document.querySelector("#name").value.toUpperCase()
+                datosUsuario.apellidoUsuario = document.querySelector("#surname").value.toUpperCase()
                 datosUsuario.mailUsuario = document.querySelector("#mail").value;
                 datosUsuario.telefonoUsuario = document.querySelector("#phone").value;
                 if (datosUsuario.nombreUsuario.length >= 2 && datosUsuario.apellidoUsuario.length >= 2 && datosUsuario.mailUsuario.includes("@") && datosUsuario.mailUsuario.length > 4 && datosUsuario.telefonoUsuario.length >= 7) {
@@ -467,7 +467,7 @@ document.querySelector("#precioTotalCarritoIndex").addEventListener("click", () 
                     `
                         document.querySelector(".modal-body").innerHTML =
                             `
-                        <h3>¡Gracias ${datosUsuario.nombreUsuario} por tu compra!</h3>
+                        <h3>¡GRACIAS ${datosUsuario.nombreUsuario} POR TU COMPRA!</h3>
                         <br>
                         <h4>Te hemos enviado tu factura electrónica a ${datosUsuario.mailUsuario}</h4>
                         <br>
