@@ -4,7 +4,7 @@ let contenedorTarjetasDiscosMasVendidos = document.getElementById("contenedorDis
 contenedorTarjetasDiscosMasVendidos.classList.add('justify-content-around', 'p-3');
 discosMasVendidos.forEach(disco => {
     const article = document.createElement("article");
-    article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3");
+    article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3", "animate__bounceIn");
     article.innerHTML = `
     <img src="${disco.img}" class="card-img-top mt-3" alt="...">
     <div class="card-body">
@@ -23,7 +23,7 @@ let contenedorTarjetasDiscosUltimosLanzamientos = document.getElementById("conte
 contenedorTarjetasDiscosUltimosLanzamientos.classList.add('justify-content-around', 'p-3');
 discosUltimosLanzamientos.forEach(disco => {
     const article = document.createElement("article");
-    article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3");
+    article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3", "animate__bounceIn");
     article.innerHTML = `
     <img src="${disco.img}" class="card-img-top mt-3" alt="...">
     <div class="card-body">
@@ -42,7 +42,7 @@ let contenedorTarjetasDiscosOfertas = document.getElementById("contenedorDiscosO
 contenedorTarjetasDiscosOfertas.classList.add('justify-content-around', 'p-3');
 discosOfertas.forEach(disco => {
     const article = document.createElement("article");
-    article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3");
+    article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3", "animate__bounceIn");
     article.innerHTML = `
     <img src="${disco.img}" class="card-img-top mt-3" alt="...">
     <div class="card-body">
@@ -61,7 +61,7 @@ let contenedorTarjetasEnvioGratis = document.getElementById("contenedorDiscosEnv
 contenedorTarjetasEnvioGratis.classList.add('justify-content-around', 'p-3');
 discosEnvioGratis.forEach(disco => {
     const article = document.createElement("article");
-    article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3");
+    article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3", "animate__bounceIn");
     article.innerHTML = `
     <img src="${disco.img}" class="card-img-top mt-3" alt="...">
     <div class="card-body">
@@ -112,7 +112,7 @@ for (let i = 0; i < arrImgCategoria.length; i++) {
         }
         for (const disco of discosCategoria) {
             let article = document.createElement("article");
-            article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3");
+            article.classList.add("card", "col-12", "col-sm-5", "col-md-5", "col-lg-3", "col-xl-3", "m-1", "mb-3", "animate__bounceIn");
             article.innerHTML =
                 `
                 <img src="${disco.img}" class="card-img-top mt-3" alt="...">
